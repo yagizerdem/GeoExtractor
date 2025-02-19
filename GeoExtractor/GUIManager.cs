@@ -84,7 +84,7 @@ namespace GeoExtractor
             string template = $"""
                 Enter Rd3 file name :  {FileNameInput}
                 
-                1-) Go Back
+                ESC-) Go Back
                 Enter-)  Begin process file
                 """.Trim();
 

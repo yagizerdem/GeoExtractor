@@ -37,7 +37,7 @@ namespace GeoExtractor
                     }
                     else if(GUIManager.GetInstance.ScreenState is Enums.ScreenState.ExtractData)
                     {
-                        if (keyInfo.Key == ConsoleKey.NumPad1 || keyInfo.Key == ConsoleKey.D1)
+                        if (keyInfo.Key == ConsoleKey.Escape)
                         {
                             GUIManager.GetInstance.ScreenState = Enums.ScreenState.StartUp;
                         }

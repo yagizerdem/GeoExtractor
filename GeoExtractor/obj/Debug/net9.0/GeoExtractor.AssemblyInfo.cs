@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeoExtractor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03ce6bd4089315cd54ad675ad3e77d51e9c38acd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25f38d29816d330d57da0a6663010a2764588347")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeoExtractor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeoExtractor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
