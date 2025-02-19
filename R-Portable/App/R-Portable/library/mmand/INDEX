@@ -1,0 +1,19 @@
+binarise                Binarise a numeric array
+binary                  Check for a binary array
+components              Find connected components
+display                 Display a 2D image
+distanceTransform       Distance transforms
+erode                   Standard mathematical morphology operations
+gameOfLife              Conway's Game of Life
+gaussianSmooth          Smooth a numeric array with a Gaussian kernel
+isKernel                Kernel-generating functions
+meanFilter              Apply a filter to an array
+morph                   Morph an array with a kernel
+neighbourhood           Get neighbourhood information for an array
+resample                Resample an array
+sampleKernelFunction    Sampling and plotting kernels
+skeletonise             Skeletonise a numeric array
+sketch                  Show an ASCII art representation of a 2D image
+                        or matrix
+symmetric               Check for a symmetric array
+threshold               Threshold a numeric array or vector

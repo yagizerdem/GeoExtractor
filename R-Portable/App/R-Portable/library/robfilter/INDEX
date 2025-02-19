@@ -1,0 +1,41 @@
+adore.filter            A Robust Adaptive Online Repeated Median Filter
+                        for Univariate Time Series
+const                   Correction factors to achieve unbiasedness of
+                        the Qn scale estimator
+const.Q                 Correction factors to achieve unbiasedness of
+                        the regression-free Q scale estimator
+critvals                Critical Values for the RM Goodness of Fit Test
+dfs                     Degrees of freedom for the SCARM test
+                        statistic.
+dr.filter               Deepest Regression (DR) filter
+dw.filter               Robust Double Window Filtering Methods for
+                        Univariate Time Series
+hybrid.filter           Robust Hybrid Filtering Methods for Univariate
+                        Time Series
+lms.filter              Least Median of Squares (LMS) filter
+lqd.filter              Least Quartile Difference filter
+lts.filter              Least Trimmed Squares (LTS) filter
+madore.filter           A multivariate adaptive online repeated median
+                        filter
+med.filter              Median (MED) filter
+mscarm.filter           MSCARM (Multivariate Slope Comparing Adaptive
+                        Repeated Median)
+multi.ts                Generated Multivariate Time Series
+rm.filter               Repeated Median (RM) filter
+robfilter-package       Robust Time Series Filters
+robreg.filter           Robust Regression Filters for Univariate Time
+                        Series
+robust.filter           Robust Filtering Methods for Univariate Time
+                        Series
+scarm.filter            SCARM (Slope Comparing Adaptive Repeated
+                        Median)
+sizecorrection          Bias correction factors for the robust scale
+                        estimators MAD, Sn, Qn, and LSH
+timecorrection          Correction factors for the scale estimation of
+                        the filtering procedure proposed by Fried
+                        (2004).
+var.n                   Variance of the Repeated Median slope
+                        estimator.
+wrm.filter              Weighted Repeated Median Filters for Univariate
+                        Time Series
+wrm.smooth              Weighted Repeated Median Smoothing
