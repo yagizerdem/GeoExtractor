@@ -127,6 +127,7 @@ namespace GeoExtractor
                    in GeoRadarJsonStorage and GeoRadarImageStorage Folders which are nested in 
                    GeoRadarService folder
 
+                8. Json data as string format ll inserted to sqlite database in GeoRadarService
 
                 """.Trim();
 
