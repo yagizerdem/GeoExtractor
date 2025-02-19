@@ -167,7 +167,7 @@ namespace GeoExtractor
 
             if (!File.Exists(AppServiceDbPath))
             {
-                File.Create(AppServiceDbPath);
+                using (File.Create(AppServiceDbPath)) { }
             }
 
             // store output json data from r script 

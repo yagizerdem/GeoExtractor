@@ -40,3 +40,4 @@ C:\Users\yagiz\Desktop\GeoExtractor\GeoExtractor\bin\Debug\net9.0\runtimes\win-a
 C:\Users\yagiz\Desktop\GeoExtractor\GeoExtractor\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\yagiz\Desktop\GeoExtractor\GeoExtractor\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\yagiz\Desktop\GeoExtractor\GeoExtractor\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\yagiz\Desktop\GeoExtractor\GeoExtractor\obj\Debug\net9.0\GeoExtractor.sourcelink.json
