@@ -1,0 +1,72 @@
+Package: RGPR
+Type: Package
+Title: Ground-penetrating radar (GPR) data visualisation, processing
+        and delineation
+Version: 0.0.7
+Date: 2019-09-15
+Authors@R: c(
+  person("Emanuel", "Huber", email = "emanuel.huber@pm.me",
+  role = c("aut", "cre")),
+  person("Guillaume", "Hans", email = "guillaume.hans@fpinnovations.ca", 
+  role = "aut"))
+Author: Emanuel Huber and Guillaume Hans
+Maintainer: Emanuel Huber <emanuel.huber@pm.me>
+Description: S4 classes and R functions to read, write, analyse and visualise
+    ground-penetrating radar (GPR) data.
+Depends: base, R (>= 3.50)
+License: GPL (>= 2)
+URL: https://github.com/emanuelhuber/RGPR
+BugReports: https://github.com/emanuelhuber/RGPR/issues
+LazyData: true
+Encoding: UTF-8
+Collate: 'RGPR.R' 'global.R' 'ClassGPR.R' 'ClassGPRset.R'
+        'ClassGPRsurvey.R' 'ClassGPRcube.R' 'ClassMisc.R'
+        'GroupArith.R' 'GroupMath.R' 'GroupSummary.R' 'GroupCompare.R'
+        'getterSetter.R' 'hyperbola.R' 'GPS.R' 'readFiles.R'
+        'readDT1.R' 'readMala.R' 'readIPRB.R' 'readSGY.R' 'readDZT.R'
+        'readVOL.R' 'readSEG2.R' 'readUTSI.R' 'readTXT.R' 'readIDS.R'
+        'readSGPR.R' 'readOUT.R' 'data.R' 'ampl.R' 'adjustGamma.R'
+        'ACF.R' 'CCF.R' 'SWACF.R' 'clip.R' 'clippedValues.R' 'declip.R'
+        'plot.R' 'plotly.R' 'plot3DRGL.R' 'color.R' 'delineation.R'
+        'spec1D.R' 'spec2D.R' 'FFT1D.R' 'STFT.R' 'complextrace.R'
+        'envelope.R' 'unwrapPhase.R' 'localExtrema.R' 'Arg.R'
+        'eigenimages.R' 'rmDCshift.R' 'firstBreak.R' 'estimateTime0.R'
+        'gain.R' 'gainSEC.R' 'gainAGC.R' 'gainEnv.R' 'filter2D.R'
+        'conv.R' 'deconv.R' 'optPhaseRotation.R' 'NMOCor.R'
+        'CMPAnalysis.R' 'migrate.R' 'upsample.R' 'writeGPR.R'
+        'writeBinary.R' 'writeDT1.R' 'writeSGY.R' 'exportPDF.R'
+        'exportPNG.R' 'exportFID.R' 'exportCoord.R' 'exportProc.R'
+        'plot2PNG.R' 'plot2PDF.R' 'plotFast.R' 'ggplotGPR.R'
+        'spInterpToRaster.R' 'spExtractFromRaster.R' 'rmBackground.R'
+        'rmBackgroundMatrix.R' 'checkArgs.R' 'checkSlots.R'
+        'z_interp.R' 'z_path.R' 'setLayerVelocities.R'
+        'convertTimeToDepth.R' 'getVel.R' 'getDepth.R'
+        'interp2DDelineations.R' 'GroupArith_GPRslice.R'
+        'GroupArith_GPRcube.R' 'GroupSummary_GPRslice.R'
+        'GroupSummary_GPRcube.R' 'GPRsim.R' 'crop.R' 'convUnit.R'
+        'strTensor.R' 'papply.R' 'hyperbolicTWT.R' 'NMOcorrect.R'
+        'z_message.R' 'isDepthUnit.R' 'vel.R' 'velSmooth.R'
+        'velInterp.R' 'velDix.R' 'velPick.R' 'NMO.R' 'NMOstreching.R'
+        'velSpectrum.R' 'setVel.R' 'plotVel.R' 'getVel2.R'
+        'CMPhyperbolas.R' 'NMOstack.R' 'spConvexHull.R' 'as_sf.R'
+        'spOBB.R' 'spBuffer.R' 'interpolateTimeToDepth.R' 'inspect.R'
+        'coercion_spatial.R'
+Imports: methods, graphics, stats, grDevices, utils, MASS, signal,
+        colorspace, Cairo, rgl, mmand, plot3D, adimpro, raster, fields,
+        magrittr, MBA, geojsonsf, sf, XML, checkmate, RConics,
+        robfilter, png, units, hdf5r, ggplot2
+RoxygenNote: 7.3.1
+Suggests: testthat, plotly
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: RGPR
+RemoteUsername: emanuelhuber
+RemoteRef: HEAD
+RemoteSha: 0d05de45bad43d928b7c8ac225d57963a096ec3f
+GithubRepo: RGPR
+GithubUsername: emanuelhuber
+GithubRef: HEAD
+GithubSHA1: 0d05de45bad43d928b7c8ac225d57963a096ec3f
+NeedsCompilation: no
+Packaged: 2025-02-18 21:52:54 UTC; yagiz
+Built: R 4.2.0; ; 2025-02-18 21:52:55 UTC; windows

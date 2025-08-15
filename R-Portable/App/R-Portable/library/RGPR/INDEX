@@ -1,0 +1,304 @@
+ACF                     Auto-correlation function
+Arith,GPR,ANY-method    Basic arithmetical functions
+CMPAnalysis             Velocity Analysis of CMP Gather
+CMPhyperbolas           Returns hyperbolas associated with Vrms
+                        velociies
+Compare,GPR,ANY-method
+                        Comparison operations
+FFT1D,GPR-method        Fast Fourier Transform applied to the traces
+                        (1D)
+GPR-class               Class GPR
+GPR-subset              extract parts of GPR
+GPRcube-class           Class GPRcube
+GPRcube-subset          extract parts of GPRsurvey
+GPRset-class            Class GPRset
+GPRset-subset           extract parts of GPRset
+GPRslice-class          Class GPRslice
+GPRsurvey               Create an object of the class GPRsurvey
+GPRsurvey-subset        extract parts of GPRsurvey
+GPRsurveyEmpty          Create empty GPR object
+Math,GPR-method         Basic mathematical functions
+NMO                     Normal Move-Out
+NMOCor                  Normal Move-Out correction
+NMOcorrect              Normal Move-Out correction
+NMOstack                Appla Normal Move-Out (NMO) correction and
+                        stack the traces
+NMOstreching            Normal Move-Out streching
+RGPR-package            RGPR: A package for processing and visualising
+                        ground-penetrating data radar (GPR) data.
+STFT,GPR-method         Short-time Fourier Transform (STFT)
+Summary,GPRcube-method
+                        Basic summary functions
+UTMToEPSG               EPGS code from UTM zone
+UTMToll                 UTM to latitude-longitude
+[[                      extract a GPR object from a GPRsurvey object
+adjustGamma             Gamma correction of the amplitude
+ampl                    Amplitude (deprecated)
+analyticSignal          Analytic signal (complex trace)
+ann                     Annotations of the GPR data
+antfreq                 Antenna frequency in MHz
+antsep                  Antenna separation
+as.array                Coercion to matrix
+as.matrix               Coercion to matrix
+as.sf                   Coerce object to an sf POINT object
+as.spatialLines         Coerce object to an object of the class
+                        SpatialLines
+as.spatialPoints        Coerce object to an object of the class
+                        SpatialPoints
+backgroundSub           Background matrix substraction See Rashed and
+                        Harbi (2014) Background matrix subtraction
+                        (BMS): A novel background removal algorithm for
+                        GPR data doi: 10.1016/j.jappgeo.2014.04.022
+                        Takes time to compute!!
+bits2volt               Bytes to volt conversion Convert bytes to volt
+                        values
+byte2volt               Bytes to volt conversion Convert bytes to volt
+                        values
+capFirstLetter          Capitalize the first letter in a word string in
+                        R
+clip                    Clip the amplitude
+clippedValues           Return the clipped values of the GPR signal
+closestTr               Closest trace
+colFromPal              Return color from palette
+colSums,GPR-method      Form Row and Column Sums and Means
+conv1D                  Trace convolution (1D)
+conv2D                  2D onvolution
+convUnit                Utility function for unit conversion
+convertTimeToDepth      Time to depth conversion
+convmtx                 Returns the convolution matrix Returns the
+                        convolution matrix, A, such that the product of
+                        A and a vector, x, is the convolution of y and
+                        x.
+convolution             Linear convolution based on FFT
+convolution2D           Two-dimensional convolution
+coord                   Coordinates of the GPR data
+coordref                Coordref of the GPR data
+coords                  Return coordinates
+corAntElev              Correct for the elevation of antenna above the
+                        ground
+crop                    Crop GPR data
+crs                     Coordinate reference system (CRS) of the GPR
+                        data
+dcshift                 Direct-Current shift removal
+declip                  Declip the GPR signal
+deconv                  Deconvolution
+deconvolve              Deconvolution with known wavelet
+deconvolveSparse        Sparse deconvolution
+delineate               Delineate structure on GPR data
+depth                   Depth/time of the GPR data
+depth0                  Depth zero
+depthToTime             Depth to time conversion
+depthunit               Depth unit of the GPR data
+description             Description of the GPR data
+detectASCIIProp         Get properties of ASCII file to read it with
+                        'read.table'
+dewow                   Trace dewowing
+displacement            Displacement to align two matrix
+distTensors             Distance between structure tensors
+eigenDecomp2x2SymMatrix
+                        Eigendecomposition of 2x2 matrices
+eigenFilter             Eigenimage filter
+eigenimages             Eigenimage
+envelope                Amplitude envelope
+estimateTime0           Estimate and set time-zero
+exportCoord             Export the trace coordinates.
+exportCubeToXYZC        Export data cube to xyzc-data format
+exportFid               Export fiducial markers
+exportPDF               Export a PDF showing the GPR profile.
+exportPNG,GPR-method    Export GPR data as PNG file
+exportProc              Export the process steps.
+fFilter                 Frequency filter
+fid                     Fiducial markers of the GPR data
+filepath                Filepath of the GPR data
+filter1D                One dimensional filters
+filter2D                Two-dimensional filters
+firstBreak              Time of first wave break
+firstBreakToTime0       Convert first wave break time to time-zero
+fkFilter                Frequency-wavenumber filter
+frenkeCMP               Ground-penetrating radar data: CMP.
+frenkeLine00            Ground-penetrating radar data: common-offset
+                        survey
+frenkeTopo00            Trace coordinates of 'frenkeLine00'.
+freqFromString          Extract frequency from string
+gain                    Gain compensation
+gainAGC                 Automatic Gain Control (AGC) gain
+gainEnv                 Gain compensation based on envelop
+gammaCorrection         Gamma correction of the amplitude
+georef                  Georeferencing
+getDepth                Get depth model
+getFName                Filepath(s) with correct extension(s)
+getGPR                  Extract GPR object from GPRsurvey object
+getGainSEC              Spreading and Exponential Compensation (SEC)
+                        gain
+getUTMzone              Get UTM zone from lattidue and longitude
+getVel                  Get velocity model
+getVel2                 Get velocity model
+gethd                   Return data header
+ggplotGPR               GG-plot of GPR data
+gkernel                 Gaussian 2d-kernel
+hyperbolaFit            Fit hyperbola to data points
+hyperbolaPlot           Plot a hyperbola
+hyperbolaSim            Simulate hyperbola
+hyperbolicTWT           Hyperbolic two-way travel time
+inPoly                  Return points that are within a polygon
+inspect                 Inspect GPR data plot
+instAmpl                Instantaneous amplitude
+instPhase               Instantaneous phase
+int32touint32           Fix a 32 bit unsigned integer that has been
+                        read as signed
+interp2DDelineations    2D interpolation of the delineations and
+                        surface topography
+interpPos               Interpolate trace positions from measurement
+                        (e.g., GPS).
+interpPosFromGPGGA      Interpolate GPR coordinates from GPS data
+                        (GPGGA string) data
+interpPosFromGeoJSON    Interpolate GPR coordinates from geoJSON data
+interpPosFromXYZ        Interpolate GPR coordinates from xyz
+                        coordinates
+interpSlices            Interpolate horizontal slices
+interpTrace             Interpolate (vertically) trace at regular
+                        interval or given position
+interpolateTimeToDepth
+                        Time-to-depth conversion based on depth
+                        information
+intersections           Return intersection from GPRsurvey
+isCMP                   Return TRUE if surveymode is CMP
+isDepthTime             Is the z-dimension time?
+isLengthUnit            Return TRUE if the data are a function of
+                        length
+isTimeUnit              Return TRUE if the data are a function of time
+lines                   Add a GPR trace on a plot
+linkCoordFid            Link coordinates to fiducial marker
+llToUTM                 longitude, latitude to UTM
+localExtrema,GPR-method
+                        Local extrema
+migration               Deprecated
+name                    Name of the GPR data
+ntraces                 Number of traces
+optPhaseRotation        Optimum Phase Rotation
+padmat                  pad a matrix
+palCol                  Return color from palette
+palGPR                  Plot single colour palette
+papply                  Apply processing to GPRsurvey object
+pathLength              Path length
+pathRelPos              Relative position on a path
+perpPoints              Points perdicular to a polyline
+phaseRotation           Phase rotation shift the phase of signal by phi
+                        (in radian)
+plot                    Plot a GPR cube
+plot2PDF                Export a PDF showing the GPR profile.
+plot2PNG                Export a PNG showing the GPR profile.
+plot3DRGL               Three-dimensional plot of the GPR data with
+                        Open-GL
+plotAmpl                DEPRECATED - Plot the trace amplitude
+plotEnvelope            DEPRECATED - Plot the trace plotEnvelope
+plotFast                Faster plot
+plotTensor              Plot structure tensor on GPR data
+plotTensor0             Plot structure tensor on GPR data
+plotVel                 Plot Velocities
+plotVelocityLayers      Plot the delineation on a 2D plot
+plotly                  Interactive plot of GPR objects with plotly.js
+points                  Add a GPR trace points on a plot
+pos                     Position of the GPR traces
+posLine                 Relative position on a multiline
+posunit                 Position unit of the GPR data
+print                   Print GPR
+print.GPRcube           Print GPRcube
+proc                    Processing steps applied to the data
+processing              DEPRECATED - Processing steps applied to the
+                        data
+quiet                   Suppressing output from cat() or print()
+readDZX                 Read GSSI's .dzx file
+readFID                 read fiducial marker files
+readGPR                 Read a GPR data file
+readGPS                 Read .GPS files (Sensors and Software)
+readSEG2                Read SEG-2
+readSGY                 Read SEG-Y file
+readTopo                read topo file
+readUSRadar             Read US Radar files
+readVOL                 Read *.vol data
+regInterpPos            Trace interpolation at regularly spaced
+                        positions
+relTrPos                Relative trace position on the GPR profile.
+repmat                  Repeat matrix
+res                     Return resolution
+reverse                 Reverse the trace position.
+rmBackground            Remove background
+robustSmooth            Robust smoothing
+rotatePhase             Phase rotation
+setCoordref             Define a local reference coordinate
+setGridCoord            Set grid coordinates the trace position.
+setVel                  Set velocities
+shiftEst                Shift estimation between two GPR profiles.
+shiftmat                shift a matrix by n and m shift a matrix by n
+                        and m
+show,GPRcube-method     Show some information on the GPRcube object
+simWavelet              Simulates a GPR wavelet
+spBuffer                Buffer the GPR lines
+spConvexHull            Convex hull of GPR data
+spExtractFromRaster     Extract elevation from raster data
+spInterpToRaster        Interpolate trace elevation to raster
+spOBB                   Oriented bounding box
+spec                    Return the amplitude spectrum of the GPR
+                        object.
+spec1D,GPR-method       Frequency spectrum the traces (1D)
+spec2D,GPR-method       Frequency spectrum the traces (1D)
+strTensor               Structure tensor field of GPR data
+strucTensor             structure tensor for matrices
+surveyIntersect         Compute the survey intersections
+surveymode              Survey mode of the GPR data
+svAngle                 Angle of the GPR survey
+svDate                  Survey date
+time0                   'time-zero' of every traces
+time0Cor                Time zero correction
+timeCorOffset           Constant-offset correction (time) of the GPR
+                        data
+timeToDepth             time to depth conversion
+tpOBB2D                 Oriented bounding box (2D)
+tpShift                 Shift trace positions of one GPR data
+trAmplCor               Gain compensation
+trPlot                  Plot all the traces in one 1D plot
+trProject               Trace projection
+trRmDuplicates          Remove traces with duplicated trace positions
+trTime                  Time of data collection for each trace
+trTime,GPR-method       #' Velocity model of the GPR data #' #' @name
+                        vel #' @rdname vel #' @export setMethod("vel",
+                        "GPR", function(x) if(length(x@vel) == 1)
+                        return(x@vel[[1]]) else return(x@vel) )
+traceAverage            Trace average (DEPRECATED, use 'traceStat'
+                        instead)
+traceScaling            Trace scaling
+traceShift              Shift trace vertically
+traceStat               Trace statistics
+trimStr                 Trim string
+unscale                 Unscale
+unwrapPhase,GPR-method
+                        Unwrap signal phase
+upsample                Up-sample the GPR data (1D and 2D
+                        sinc-interpolation)
+values                  Values of the GPR data
+vel                     Set and get velocity
+velDix                  Computes Dix velocities
+velInterp               Interpolate velocity model
+velPick                 Pick velocity interactively
+velSmooth               Smooth velocity model
+velSpectrum             Velocity spectrum (CMP Analysis)
+verboseF                Suppressing output from cat(), warnings &
+                        messages
+wapply                  wapply: A faster (but less functional)
+                        "rollapply" for vector setups April 23, 2013.
+                        By A.N. Spiess, senior scientist at the
+                        Department of Andrology at the University
+                        Hospital Hamburg-Eppendorf. This is what turned
+                        out (wapply for "window apply").
+wapplyMat               windowing with centered window
+wapplyMat2              windowing with not centered window
+wapplyRow               Wapply on the row of a matrix (windowed)
+wapplyRowC              Wapply on the row of a matrix (windowed +
+                        CENTERED)
+wavGPR                  Simulate GPR wavelet
+wavHat                  Simulate Hat wave
+writeGPR                Write GPR data
+writeSurvey             Write GPRsurvey object
+xpos                    Return x-positions
+ypos                    Return y-positions

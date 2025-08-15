@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Ground-penetrating radar (GPR) data visualisation, processing
+and delineation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Ground-penetrating radar (GPR) data visualisation, processing
+and delineation
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;RGPR&rsquo; version 0.0.7</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="# "> </a>
+<a href="#A">A</a>
+<a href="#B">B</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#E">E</a>
+<a href="#F">F</a>
+<a href="#G">G</a>
+<a href="#H">H</a>
+<a href="#I">I</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#N">N</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+<a href="#Q">Q</a>
+<a href="#R">R</a>
+<a href="#S">S</a>
+<a href="#T">T</a>
+<a href="#U">U</a>
+<a href="#V">V</a>
+<a href="#W">W</a>
+<a href="#X">X</a>
+<a href="#Y">Y</a>
+<a href="#misc">misc</a>
+</p>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="RGPR-package.html">RGPR-package</a></td>
+<td>RGPR: A package for processing and visualising ground-penetrating data radar (GPR) data.</td></tr>
+</table>
+
+<h2><a name="A">-- A --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="ACF.html">ACF</a></td>
+<td>Auto-correlation function</td></tr>
+<tr><td style="width: 25%;"><a href="adjustGamma.html">adjustGamma</a></td>
+<td>Gamma correction of the amplitude</td></tr>
+<tr><td style="width: 25%;"><a href="ampl.html">ampl</a></td>
+<td>Amplitude (deprecated)</td></tr>
+<tr><td style="width: 25%;"><a href="analyticSignal.html">analyticSignal</a></td>
+<td>Analytic signal (complex trace)</td></tr>
+<tr><td style="width: 25%;"><a href="ann.html">ann</a></td>
+<td>Annotations of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="ann.html">ann&lt;-</a></td>
+<td>Annotations of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="antfreq.html">antfreq</a></td>
+<td>Antenna frequency in MHz</td></tr>
+<tr><td style="width: 25%;"><a href="antfreq.html">antfreq&lt;-</a></td>
+<td>Antenna frequency in MHz</td></tr>
+<tr><td style="width: 25%;"><a href="antsep.html">antsep</a></td>
+<td>Antenna separation</td></tr>
+<tr><td style="width: 25%;"><a href="antsep.html">antsep&lt;-</a></td>
+<td>Antenna separation</td></tr>
+<tr><td style="width: 25%;"><a href="Arith-methods.html">Arith</a></td>
+<td>Basic arithmetical functions</td></tr>
+<tr><td style="width: 25%;"><a href="Arith-methods.html">Arith-method</a></td>
+<td>Basic arithmetical functions</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcube-coercion.html">as.array</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.GPR.data.frame</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.GPR.list</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.GPR.matrix</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.GPRset.GPR</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.integer</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.matrix</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.numeric</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.raster</a></td>
+<td>Coercion to matrix</td></tr>
+<tr><td style="width: 25%;"><a href="as.sf.html">as.sf</a></td>
+<td>Coerce object to an sf POINT object</td></tr>
+<tr><td style="width: 25%;"><a href="as.sf.html">as.sf-method</a></td>
+<td>Coerce object to an sf POINT object</td></tr>
+<tr><td style="width: 25%;"><a href="as.spatialLines.html">as.spatialLines</a></td>
+<td>Coerce object to an object of the class SpatialLines</td></tr>
+<tr><td style="width: 25%;"><a href="as.spatialLines.html">as.spatialLines-method</a></td>
+<td>Coerce object to an object of the class SpatialLines</td></tr>
+<tr><td style="width: 25%;"><a href="as.spatialPoints.html">as.spatialPoints</a></td>
+<td>Coerce object to an object of the class SpatialPoints</td></tr>
+<tr><td style="width: 25%;"><a href="as.spatialPoints.html">as.spatialPoints-method</a></td>
+<td>Coerce object to an object of the class SpatialPoints</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcoercion.html">as.vector</a></td>
+<td>Coercion to matrix</td></tr>
+</table>
+
+<h2><a name="B">-- B --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="rmBackgroundMatrix.html">backgroundSub</a></td>
+<td>Background matrix substraction See Rashed and Harbi (2014) Background matrix subtraction (BMS): A novel background removal algorithm for GPR data doi: 10.1016/j.jappgeo.2014.04.022 Takes time to compute!!</td></tr>
+<tr><td style="width: 25%;"><a href="bits2volt.html">bits2volt</a></td>
+<td>Bytes to volt conversion Convert bytes to volt values</td></tr>
+<tr><td style="width: 25%;"><a href="byte2volt.html">byte2volt</a></td>
+<td>Bytes to volt conversion Convert bytes to volt values</td></tr>
+</table>
+
+<h2><a name="C">-- C --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="capFirstLetter.html">capFirstLetter</a></td>
+<td>Capitalize the first letter in a word string in R</td></tr>
+<tr><td style="width: 25%;"><a href="ACF.html">CCF</a></td>
+<td>Auto-correlation function</td></tr>
+<tr><td style="width: 25%;"><a href="trClip.html">clip</a></td>
+<td>Clip the amplitude</td></tr>
+<tr><td style="width: 25%;"><a href="clippedValues.html">clippedValues</a></td>
+<td>Return the clipped values of the GPR signal</td></tr>
+<tr><td style="width: 25%;"><a href="closestTr.html">closestTr</a></td>
+<td>Closest trace</td></tr>
+<tr><td style="width: 25%;"><a href="CMPAnalysis-methods.html">CMPAnalysis</a></td>
+<td>Velocity Analysis of CMP Gather</td></tr>
+<tr><td style="width: 25%;"><a href="CMPAnalysis-methods.html">CMPAnalysis-method</a></td>
+<td>Velocity Analysis of CMP Gather</td></tr>
+<tr><td style="width: 25%;"><a href="CMPhyperbolas.html">CMPhyperbolas</a></td>
+<td>Returns hyperbolas associated with Vrms velociies</td></tr>
+<tr><td style="width: 25%;"><a href="CMPhyperbolas.html">CMPhyperbolas-method</a></td>
+<td>Returns hyperbolas associated with Vrms velociies</td></tr>
+<tr><td style="width: 25%;"><a href="colFromPal.html">colFromPal</a></td>
+<td>Return color from palette</td></tr>
+<tr><td style="width: 25%;"><a href="colSums.html">colMeans-method</a></td>
+<td>Form Row and Column Sums and Means</td></tr>
+<tr><td style="width: 25%;"><a href="colSums.html">colSums-method</a></td>
+<td>Form Row and Column Sums and Means</td></tr>
+<tr><td style="width: 25%;"><a href="Compare-methods.html">Compare</a></td>
+<td>Comparison operations</td></tr>
+<tr><td style="width: 25%;"><a href="Compare-methods.html">Compare-method</a></td>
+<td>Comparison operations</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">contour</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">contour.GPR</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="conv1D.html">conv1D</a></td>
+<td>Trace convolution (1D)</td></tr>
+<tr><td style="width: 25%;"><a href="conv2D.html">conv2D</a></td>
+<td>2D onvolution</td></tr>
+<tr><td style="width: 25%;"><a href="convertTimeToDepth.html">convertTimeToDepth</a></td>
+<td>Time to depth conversion</td></tr>
+<tr><td style="width: 25%;"><a href="convmtx.html">convmtx</a></td>
+<td>Returns the convolution matrix Returns the convolution matrix, A, such that the product of A and a vector, x, is the convolution of y and x.</td></tr>
+<tr><td style="width: 25%;"><a href="convolution.html">convolution</a></td>
+<td>Linear convolution based on FFT</td></tr>
+<tr><td style="width: 25%;"><a href="convolution2D.html">convolution2D</a></td>
+<td>Two-dimensional convolution</td></tr>
+<tr><td style="width: 25%;"><a href="convUnit.html">convUnit</a></td>
+<td>Utility function for unit conversion</td></tr>
+<tr><td style="width: 25%;"><a href="coord-methods.html">coord</a></td>
+<td>Coordinates of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="coord-methods.html">coord-method</a></td>
+<td>Coordinates of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="coord-methods.html">coord&lt;-</a></td>
+<td>Coordinates of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="coord-methods.html">coord&lt;--method</a></td>
+<td>Coordinates of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="coordref.html">coordref</a></td>
+<td>Coordref of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="coordref.html">coordref&lt;-</a></td>
+<td>Coordref of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="coords-methods.html">coords</a></td>
+<td>Return coordinates</td></tr>
+<tr><td style="width: 25%;"><a href="coords-methods.html">coords-method</a></td>
+<td>Return coordinates</td></tr>
+<tr><td style="width: 25%;"><a href="coords-methods.html">coords&lt;-</a></td>
+<td>Return coordinates</td></tr>
+<tr><td style="width: 25%;"><a href="coords-methods.html">coords&lt;--method</a></td>
+<td>Return coordinates</td></tr>
+<tr><td style="width: 25%;"><a href="corAntElev.html">corAntElev</a></td>
+<td>Correct for the elevation of antenna above the ground</td></tr>
+<tr><td style="width: 25%;"><a href="crop.html">crop</a></td>
+<td>Crop GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="crs.html">crs</a></td>
+<td>Coordinate reference system (CRS) of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="crs.html">crs&lt;-</a></td>
+<td>Coordinate reference system (CRS) of the GPR data</td></tr>
+</table>
+
+<h2><a name="D">-- D --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="dcshift.html">dcshift</a></td>
+<td>Direct-Current shift removal</td></tr>
+<tr><td style="width: 25%;"><a href="declip.html">declip</a></td>
+<td>Declip the GPR signal</td></tr>
+<tr><td style="width: 25%;"><a href="declip.html">declip-method</a></td>
+<td>Declip the GPR signal</td></tr>
+<tr><td style="width: 25%;"><a href="deconv.html">deconv</a></td>
+<td>Deconvolution</td></tr>
+<tr><td style="width: 25%;"><a href="deconvolve.html">deconvolve</a></td>
+<td>Deconvolution with known wavelet</td></tr>
+<tr><td style="width: 25%;"><a href="deconvolveSparse.html">deconvolveSparse</a></td>
+<td>Sparse deconvolution</td></tr>
+<tr><td style="width: 25%;"><a href="delineation.html">delineate</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="delineation.html">delineations</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="depth.html">depth</a></td>
+<td>Depth/time of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="depth0.html">depth0</a></td>
+<td>Depth zero</td></tr>
+<tr><td style="width: 25%;"><a href="depth.html">depth&lt;-</a></td>
+<td>Depth/time of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="depthToTime.html">depthToTime</a></td>
+<td>Depth to time conversion</td></tr>
+<tr><td style="width: 25%;"><a href="depthunit.html">depthunit</a></td>
+<td>Depth unit of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="depthunit.html">depthunit&lt;-</a></td>
+<td>Depth unit of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="description.html">description</a></td>
+<td>Description of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="description.html">description&lt;-</a></td>
+<td>Description of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="detectASCIIProp.html">detectASCIIProp</a></td>
+<td>Get properties of ASCII file to read it with 'read.table'</td></tr>
+<tr><td style="width: 25%;"><a href="dewow.html">dewow</a></td>
+<td>Trace dewowing</td></tr>
+<tr><td style="width: 25%;"><a href="displacement.html">displacement</a></td>
+<td>Displacement to align two matrix</td></tr>
+<tr><td style="width: 25%;"><a href="palGPR.html">displayPalGPR</a></td>
+<td>Plot single colour palette</td></tr>
+<tr><td style="width: 25%;"><a href="distTensors.html">distTensors</a></td>
+<td>Distance between structure tensors</td></tr>
+<tr><td style="width: 25%;"><a href="kernels.html">dx_gkernel</a></td>
+<td>Gaussian 2d-kernel</td></tr>
+<tr><td style="width: 25%;"><a href="kernels.html">dy_gkernel</a></td>
+<td>Gaussian 2d-kernel</td></tr>
+</table>
+
+<h2><a name="E">-- E --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="eigenDecomp2x2SymMatrix.html">eigenDecomp2x2SymMatrix</a></td>
+<td>Eigendecomposition of 2x2 matrices</td></tr>
+<tr><td style="width: 25%;"><a href="eigenFilter.html">eigenFilter</a></td>
+<td>Eigenimage filter</td></tr>
+<tr><td style="width: 25%;"><a href="eigenimages.html">eigenimages</a></td>
+<td>Eigenimage</td></tr>
+<tr><td style="width: 25%;"><a href="envelope.html">envelope</a></td>
+<td>Amplitude envelope</td></tr>
+<tr><td style="width: 25%;"><a href="estimateTime0.html">estimateTime0</a></td>
+<td>Estimate and set time-zero</td></tr>
+<tr><td style="width: 25%;"><a href="exportCoord.html">exportCoord</a></td>
+<td>Export the trace coordinates.</td></tr>
+<tr><td style="width: 25%;"><a href="exportCubeToXYZC.html">exportCubeToXYZC</a></td>
+<td>Export data cube to xyzc-data format</td></tr>
+<tr><td style="width: 25%;"><a href="delineation.html">exportDelineations</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="exportFid.html">exportFid</a></td>
+<td>Export fiducial markers</td></tr>
+<tr><td style="width: 25%;"><a href="exportPDF.html">exportPDF</a></td>
+<td>Export a PDF showing the GPR profile.</td></tr>
+<tr><td style="width: 25%;"><a href="exportPNG-GPR-method.html">exportPNG-method</a></td>
+<td>Export GPR data as PNG file</td></tr>
+<tr><td style="width: 25%;"><a href="exportProc.html">exportProc</a></td>
+<td>Export the process steps.</td></tr>
+</table>
+
+<h2><a name="F">-- F --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="fFilter.html">fFilter</a></td>
+<td>Frequency filter</td></tr>
+<tr><td style="width: 25%;"><a href="FFT1D-GPR-method.html">FFT1D-method</a></td>
+<td>Fast Fourier Transform applied to the traces (1D)</td></tr>
+<tr><td style="width: 25%;"><a href="fid.html">fid</a></td>
+<td>Fiducial markers of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="fid.html">fid&lt;-</a></td>
+<td>Fiducial markers of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="filepath-methods.html">filepath</a></td>
+<td>Filepath of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="filepath-methods.html">filepath-method</a></td>
+<td>Filepath of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="filepath-methods.html">filepath&lt;-</a></td>
+<td>Filepath of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="filepath-methods.html">filepath&lt;--method</a></td>
+<td>Filepath of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="filter1D.html">filter1D</a></td>
+<td>One dimensional filters</td></tr>
+<tr><td style="width: 25%;"><a href="filter2D.html">filter2D</a></td>
+<td>Two-dimensional filters</td></tr>
+<tr><td style="width: 25%;"><a href="firstBreak.html">firstBreak</a></td>
+<td>Time of first wave break</td></tr>
+<tr><td style="width: 25%;"><a href="firstBreakToTime0.html">firstBreakToTime0</a></td>
+<td>Convert first wave break time to time-zero</td></tr>
+<tr><td style="width: 25%;"><a href="fkFilter.html">fkFilter</a></td>
+<td>Frequency-wavenumber filter</td></tr>
+<tr><td style="width: 25%;"><a href="frenkeCMP.html">frenkeCMP</a></td>
+<td>Ground-penetrating radar data: CMP.</td></tr>
+<tr><td style="width: 25%;"><a href="frenkeLine00.html">frenkeLine00</a></td>
+<td>Ground-penetrating radar data: common-offset survey</td></tr>
+<tr><td style="width: 25%;"><a href="frenkeTopo00.html">frenkeTopo00</a></td>
+<td>Trace coordinates of 'frenkeLine00'.</td></tr>
+<tr><td style="width: 25%;"><a href="freqFromString.html">freqFromString</a></td>
+<td>Extract frequency from string</td></tr>
+</table>
+
+<h2><a name="G">-- G --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="gain.html">gain</a></td>
+<td>Gain compensation</td></tr>
+<tr><td style="width: 25%;"><a href="gainAGC.html">gainAGC</a></td>
+<td>Automatic Gain Control (AGC) gain</td></tr>
+<tr><td style="width: 25%;"><a href="gainEnv.html">gainEnv</a></td>
+<td>Gain compensation based on envelop</td></tr>
+<tr><td style="width: 25%;"><a href="gainSEC.html">gainSEC</a></td>
+<td>Spreading and Exponential Compensation (SEC) gain</td></tr>
+<tr><td style="width: 25%;"><a href="rgCorrectGamma.html">gammaCorrection</a></td>
+<td>Gamma correction of the amplitude</td></tr>
+<tr><td style="width: 25%;"><a href="georef.html">georef</a></td>
+<td>Georeferencing</td></tr>
+<tr><td style="width: 25%;"><a href="inspect.html">getAmplFromCoords</a></td>
+<td>Inspect GPR data plot</td></tr>
+<tr><td style="width: 25%;"><a href="getDepth.html">getDepth</a></td>
+<td>Get depth model</td></tr>
+<tr><td style="width: 25%;"><a href="getFName.html">getFName</a></td>
+<td>Filepath(s) with correct extension(s)</td></tr>
+<tr><td style="width: 25%;"><a href="gainSEC.html">getGainSEC</a></td>
+<td>Spreading and Exponential Compensation (SEC) gain</td></tr>
+<tr><td style="width: 25%;"><a href="getGPR.html">getGPR</a></td>
+<td>Extract GPR object from GPRsurvey object</td></tr>
+<tr><td style="width: 25%;"><a href="getGPR.html">getGPR-method</a></td>
+<td>Extract GPR object from GPRsurvey object</td></tr>
+<tr><td style="width: 25%;"><a href="gethd.html">gethd</a></td>
+<td>Return data header</td></tr>
+<tr><td style="width: 25%;"><a href="gethd.html">gethd-method</a></td>
+<td>Return data header</td></tr>
+<tr><td style="width: 25%;"><a href="getUTMzone.html">getUTMzone</a></td>
+<td>Get UTM zone from lattidue and longitude</td></tr>
+<tr><td style="width: 25%;"><a href="getVel.html">getVel</a></td>
+<td>Get velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="getVel2.html">getVel2</a></td>
+<td>Get velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="getVel2.html">getVel2-method</a></td>
+<td>Get velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="ggplotGPR.html">ggplotGPR</a></td>
+<td>GG-plot of GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="kernels.html">gkernel</a></td>
+<td>Gaussian 2d-kernel</td></tr>
+<tr><td style="width: 25%;"><a href="GPR-class.html">GPR-class</a></td>
+<td>Class GPR</td></tr>
+<tr><td style="width: 25%;"><a href="GPR-subset.html">GPR-subset</a></td>
+<td>extract parts of GPR</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcube-class.html">GPRcube-class</a></td>
+<td>Class GPRcube</td></tr>
+<tr><td style="width: 25%;"><a href="GPRcube-subset.html">GPRcube-subset</a></td>
+<td>extract parts of GPRsurvey</td></tr>
+<tr><td style="width: 25%;"><a href="GPRset-class.html">GPRset-class</a></td>
+<td>Class GPRset</td></tr>
+<tr><td style="width: 25%;"><a href="GPRset-subset.html">GPRset-subset</a></td>
+<td>extract parts of GPRset</td></tr>
+<tr><td style="width: 25%;"><a href="GPRslice-class.html">GPRslice-class</a></td>
+<td>Class GPRslice</td></tr>
+<tr><td style="width: 25%;"><a href="GPRsurvey.html">GPRsurvey</a></td>
+<td>Create an object of the class GPRsurvey</td></tr>
+<tr><td style="width: 25%;"><a href="GPRsurvey-subset.html">GPRsurvey-subset</a></td>
+<td>extract parts of GPRsurvey</td></tr>
+<tr><td style="width: 25%;"><a href="GPRsurveyEmpty.html">GPRsurveyEmpty</a></td>
+<td>Create empty GPR object</td></tr>
+</table>
+
+<h2><a name="H">-- H --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="hyperbolaFit.html">hyperbolaFit</a></td>
+<td>Fit hyperbola to data points</td></tr>
+<tr><td style="width: 25%;"><a href="hyperbolaPlot.html">hyperbolaPlot</a></td>
+<td>Plot a hyperbola</td></tr>
+<tr><td style="width: 25%;"><a href="hyperbolaSim.html">hyperbolaSim</a></td>
+<td>Simulate hyperbola</td></tr>
+<tr><td style="width: 25%;"><a href="hyperbolicTWT.html">hyperbolicTWT</a></td>
+<td>Hyperbolic two-way travel time</td></tr>
+</table>
+
+<h2><a name="I">-- I --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="delineation.html">identifyDelineation</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="inPoly.html">inPoly</a></td>
+<td>Return points that are within a polygon</td></tr>
+<tr><td style="width: 25%;"><a href="inspect.html">inspect</a></td>
+<td>Inspect GPR data plot</td></tr>
+<tr><td style="width: 25%;"><a href="instAmpl.html">instAmpl</a></td>
+<td>Instantaneous amplitude</td></tr>
+<tr><td style="width: 25%;"><a href="instPhase.html">instPhase</a></td>
+<td>Instantaneous phase</td></tr>
+<tr><td style="width: 25%;"><a href="int32touint32.html">int32touint32</a></td>
+<td>Fix a 32 bit unsigned integer that has been read as signed</td></tr>
+<tr><td style="width: 25%;"><a href="interp2DDelineations.html">interp2DDelineations</a></td>
+<td>2D interpolation of the delineations and surface topography</td></tr>
+<tr><td style="width: 25%;"><a href="interp2DDelineations.html">interp2DDelineations-method</a></td>
+<td>2D interpolation of the delineations and surface topography</td></tr>
+<tr><td style="width: 25%;"><a href="interpolateTimeToDepth.html">interpolateTimeToDepth</a></td>
+<td>Time-to-depth conversion based on depth information</td></tr>
+<tr><td style="width: 25%;"><a href="interpPos.html">interpPos</a></td>
+<td>Interpolate trace positions from measurement (e.g., GPS).</td></tr>
+<tr><td style="width: 25%;"><a href="interpPosFromGeoJSON.html">interpPosFromGeoJSON</a></td>
+<td>Interpolate GPR coordinates from geoJSON data</td></tr>
+<tr><td style="width: 25%;"><a href="interpPosFromGPGGA.html">interpPosFromGPGGA</a></td>
+<td>Interpolate GPR coordinates from GPS data (GPGGA string) data</td></tr>
+<tr><td style="width: 25%;"><a href="interpPosFromXYZ.html">interpPosFromXYZ</a></td>
+<td>Interpolate GPR coordinates from xyz coordinates</td></tr>
+<tr><td style="width: 25%;"><a href="interpSlices.html">interpSlices</a></td>
+<td>Interpolate horizontal slices</td></tr>
+<tr><td style="width: 25%;"><a href="interpTrace.html">interpTrace</a></td>
+<td>Interpolate (vertically) trace at regular interval or given position</td></tr>
+<tr><td style="width: 25%;"><a href="surveyIntersect.html">intersect-method</a></td>
+<td>Compute the survey intersections</td></tr>
+<tr><td style="width: 25%;"><a href="intersections-methods.html">intersections</a></td>
+<td>Return intersection from GPRsurvey</td></tr>
+<tr><td style="width: 25%;"><a href="intersections-methods.html">intersections-method</a></td>
+<td>Return intersection from GPRsurvey</td></tr>
+<tr><td style="width: 25%;"><a href="isCMP.html">isCMP</a></td>
+<td>Return TRUE if surveymode is CMP</td></tr>
+<tr><td style="width: 25%;"><a href="isDepthTime.html">isDepthDepth</a></td>
+<td>Is the z-dimension time?</td></tr>
+<tr><td style="width: 25%;"><a href="isDepthTime.html">isDepthDepth-method</a></td>
+<td>Is the z-dimension time?</td></tr>
+<tr><td style="width: 25%;"><a href="isDepthTime.html">isDepthTime</a></td>
+<td>Is the z-dimension time?</td></tr>
+<tr><td style="width: 25%;"><a href="isDepthTime.html">isDepthTime-method</a></td>
+<td>Is the z-dimension time?</td></tr>
+<tr><td style="width: 25%;"><a href="isLengthUnit.html">isLengthUnit</a></td>
+<td>Return TRUE if the data are a function of length</td></tr>
+<tr><td style="width: 25%;"><a href="isTimeUnit.html">isTimeUnit</a></td>
+<td>Return TRUE if the data are a function of time</td></tr>
+</table>
+
+<h2><a name="L">-- L --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="lines.html">lines</a></td>
+<td>Add a GPR trace on a plot</td></tr>
+<tr><td style="width: 25%;"><a href="lines.html">lines.GPR</a></td>
+<td>Add a GPR trace on a plot</td></tr>
+<tr><td style="width: 25%;"><a href="lines.html">lines.GPRsurvey</a></td>
+<td>Add a GPR trace on a plot</td></tr>
+<tr><td style="width: 25%;"><a href="linkCoordFid.html">linkCoordFid</a></td>
+<td>Link coordinates to fiducial marker</td></tr>
+<tr><td style="width: 25%;"><a href="llToUTM.html">llToUTM</a></td>
+<td>longitude, latitude to UTM</td></tr>
+<tr><td style="width: 25%;"><a href="localExtrema-GPR-method.html">localExtrema-method</a></td>
+<td>Local extrema</td></tr>
+</table>
+
+<h2><a name="M">-- M --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Math-methods.html">Math-GPR-method</a></td>
+<td>Basic mathematical functions</td></tr>
+<tr><td style="width: 25%;"><a href="Math-methods.html">Math-method</a></td>
+<td>Basic mathematical functions</td></tr>
+<tr><td style="width: 25%;"><a href="migrate.html">migrate</a></td>
+<td>Deprecated</td></tr>
+<tr><td style="width: 25%;"><a href="migrate.html">migration</a></td>
+<td>Deprecated</td></tr>
+</table>
+
+<h2><a name="N">-- N --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="name.html">name</a></td>
+<td>Name of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="name.html">name&lt;-</a></td>
+<td>Name of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="NMO.html">NMO</a></td>
+<td>Normal Move-Out</td></tr>
+<tr><td style="width: 25%;"><a href="NMO.html">NMO-method</a></td>
+<td>Normal Move-Out</td></tr>
+<tr><td style="width: 25%;"><a href="NMOCor-methods.html">NMOCor</a></td>
+<td>Normal Move-Out correction</td></tr>
+<tr><td style="width: 25%;"><a href="NMOCor-methods.html">NMOCor-method</a></td>
+<td>Normal Move-Out correction</td></tr>
+<tr><td style="width: 25%;"><a href="NMOcorrect.html">NMOcorrect</a></td>
+<td>Normal Move-Out correction</td></tr>
+<tr><td style="width: 25%;"><a href="NMOcorrect.html">NMOcorrect-method</a></td>
+<td>Normal Move-Out correction</td></tr>
+<tr><td style="width: 25%;"><a href="NMOstack.html">NMOstack</a></td>
+<td>Appla Normal Move-Out (NMO) correction and stack the traces</td></tr>
+<tr><td style="width: 25%;"><a href="NMOstack.html">NMOstack-method</a></td>
+<td>Appla Normal Move-Out (NMO) correction and stack the traces</td></tr>
+<tr><td style="width: 25%;"><a href="NMOstreching.html">NMOstreching</a></td>
+<td>Normal Move-Out streching</td></tr>
+<tr><td style="width: 25%;"><a href="NMOstreching.html">NMOstreching-method</a></td>
+<td>Normal Move-Out streching</td></tr>
+<tr><td style="width: 25%;"><a href="ntraces.html">ntraces</a></td>
+<td>Number of traces</td></tr>
+</table>
+
+<h2><a name="O">-- O --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="optPhaseRotation.html">optPhaseRotation</a></td>
+<td>Optimum Phase Rotation</td></tr>
+</table>
+
+<h2><a name="P">-- P --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="padmat.html">padmat</a></td>
+<td>pad a matrix</td></tr>
+<tr><td style="width: 25%;"><a href="palCol.html">palCol</a></td>
+<td>Return color from palette</td></tr>
+<tr><td style="width: 25%;"><a href="palGPR.html">palGPR</a></td>
+<td>Plot single colour palette</td></tr>
+<tr><td style="width: 25%;"><a href="papply.html">papply</a></td>
+<td>Apply processing to GPRsurvey object</td></tr>
+<tr><td style="width: 25%;"><a href="pathLength.html">pathLength</a></td>
+<td>Path length</td></tr>
+<tr><td style="width: 25%;"><a href="pathRelPos.html">pathRelPos</a></td>
+<td>Relative position on a path</td></tr>
+<tr><td style="width: 25%;"><a href="perpPoints.html">perpPoints</a></td>
+<td>Points perdicular to a polyline</td></tr>
+<tr><td style="width: 25%;"><a href="phaseRotation.html">phaseRotation</a></td>
+<td>Phase rotation shift the phase of signal by phi (in radian)</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot.GPR</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot.GPRcube</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot.GPRset</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot.GPRslice</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot.html">plot.GPRsurvey</a></td>
+<td>Plot a GPR cube</td></tr>
+<tr><td style="width: 25%;"><a href="plot2PDF.html">plot2PDF</a></td>
+<td>Export a PDF showing the GPR profile.</td></tr>
+<tr><td style="width: 25%;"><a href="plot2PNG.html">plot2PNG</a></td>
+<td>Export a PNG showing the GPR profile.</td></tr>
+<tr><td style="width: 25%;"><a href="delineation.html">plot3DDelineations</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="plot3DRGL.html">plot3DRGL</a></td>
+<td>Three-dimensional plot of the GPR data with Open-GL</td></tr>
+<tr><td style="width: 25%;"><a href="plotAmpl.html">plotAmpl</a></td>
+<td>DEPRECATED - Plot the trace amplitude</td></tr>
+<tr><td style="width: 25%;"><a href="delineation.html">plotDelineations</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="plotEnvelope.html">plotEnvelope</a></td>
+<td>DEPRECATED - Plot the trace plotEnvelope</td></tr>
+<tr><td style="width: 25%;"><a href="plotFast.html">plotFast</a></td>
+<td>Faster plot</td></tr>
+<tr><td style="width: 25%;"><a href="plotly.html">plotly</a></td>
+<td>Interactive plot of GPR objects with plotly.js</td></tr>
+<tr><td style="width: 25%;"><a href="palGPR.html">plotPal</a></td>
+<td>Plot single colour palette</td></tr>
+<tr><td style="width: 25%;"><a href="plotTensor.html">plotTensor</a></td>
+<td>Plot structure tensor on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="plotTensor0.html">plotTensor0</a></td>
+<td>Plot structure tensor on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="plotVel.html">plotVel</a></td>
+<td>Plot Velocities</td></tr>
+<tr><td style="width: 25%;"><a href="plotVel.html">plotVel-method</a></td>
+<td>Plot Velocities</td></tr>
+<tr><td style="width: 25%;"><a href="setLayerVelocities.html">plotVelocityLayers</a></td>
+<td>Plot the delineation on a 2D plot</td></tr>
+<tr><td style="width: 25%;"><a href="points.html">points</a></td>
+<td>Add a GPR trace points on a plot</td></tr>
+<tr><td style="width: 25%;"><a href="points.html">points.GPR</a></td>
+<td>Add a GPR trace points on a plot</td></tr>
+<tr><td style="width: 25%;"><a href="pos.html">pos</a></td>
+<td>Position of the GPR traces</td></tr>
+<tr><td style="width: 25%;"><a href="pos.html">pos&lt;-</a></td>
+<td>Position of the GPR traces</td></tr>
+<tr><td style="width: 25%;"><a href="posLine.html">posLine</a></td>
+<td>Relative position on a multiline</td></tr>
+<tr><td style="width: 25%;"><a href="posunit.html">posunit</a></td>
+<td>Position unit of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="posunit.html">posunit&lt;-</a></td>
+<td>Position unit of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="show.html">print</a></td>
+<td>Print GPR</td></tr>
+<tr><td style="width: 25%;"><a href="show.html">print.GPR</a></td>
+<td>Print GPR</td></tr>
+<tr><td style="width: 25%;"><a href="print.GPRcube.html">print.GPRcube</a></td>
+<td>Print GPRcube</td></tr>
+<tr><td style="width: 25%;"><a href="show.html">print.GPRset</a></td>
+<td>Print GPR</td></tr>
+<tr><td style="width: 25%;"><a href="show.html">print.GPRsurvey</a></td>
+<td>Print GPR</td></tr>
+<tr><td style="width: 25%;"><a href="proc.html">proc</a></td>
+<td>Processing steps applied to the data</td></tr>
+<tr><td style="width: 25%;"><a href="proc.html">proc&lt;-</a></td>
+<td>Processing steps applied to the data</td></tr>
+<tr><td style="width: 25%;"><a href="processing.html">processing</a></td>
+<td>DEPRECATED - Processing steps applied to the data</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="quiet.html">quiet</a></td>
+<td>Suppressing output from cat() or print()</td></tr>
+</table>
+
+<h2><a name="R">-- R --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="readDZX.html">readDZX</a></td>
+<td>Read GSSI's .dzx file</td></tr>
+<tr><td style="width: 25%;"><a href="readFID.html">readFID</a></td>
+<td>read fiducial marker files</td></tr>
+<tr><td style="width: 25%;"><a href="readGPR.html">readGPR</a></td>
+<td>Read a GPR data file</td></tr>
+<tr><td style="width: 25%;"><a href="readGPS.html">readGPS</a></td>
+<td>Read .GPS files (Sensors and Software)</td></tr>
+<tr><td style="width: 25%;"><a href="readSEG2.html">readSEG2</a></td>
+<td>Read SEG-2</td></tr>
+<tr><td style="width: 25%;"><a href="readSGY.html">readSGY</a></td>
+<td>Read SEG-Y file</td></tr>
+<tr><td style="width: 25%;"><a href="readTopo.html">readTopo</a></td>
+<td>read topo file</td></tr>
+<tr><td style="width: 25%;"><a href="readUSRadar.html">readUSRadar</a></td>
+<td>Read US Radar files</td></tr>
+<tr><td style="width: 25%;"><a href="readVOL.html">readVOL</a></td>
+<td>Read *.vol data</td></tr>
+<tr><td style="width: 25%;"><a href="regInterpPos.html">regInterpPos</a></td>
+<td>Trace interpolation at regularly spaced positions</td></tr>
+<tr><td style="width: 25%;"><a href="relTrPos.html">relTrPos</a></td>
+<td>Relative trace position on the GPR profile.</td></tr>
+<tr><td style="width: 25%;"><a href="relTrPos.html">relTrPos3D</a></td>
+<td>Relative trace position on the GPR profile.</td></tr>
+<tr><td style="width: 25%;"><a href="repmat.html">repmat</a></td>
+<td>Repeat matrix</td></tr>
+<tr><td style="width: 25%;"><a href="res.html">res</a></td>
+<td>Return resolution</td></tr>
+<tr><td style="width: 25%;"><a href="reverse.html">reverse</a></td>
+<td>Reverse the trace position.</td></tr>
+<tr><td style="width: 25%;"><a href="RGPR-package.html">RGPR</a></td>
+<td>RGPR: A package for processing and visualising ground-penetrating data radar (GPR) data.</td></tr>
+<tr><td style="width: 25%;"><a href="rmBackground.html">rmBackground</a></td>
+<td>Remove background</td></tr>
+<tr><td style="width: 25%;"><a href="rmBackgroundMatrix.html">rmBackgroundMatrix</a></td>
+<td>Background matrix substraction See Rashed and Harbi (2014) Background matrix subtraction (BMS): A novel background removal algorithm for GPR data doi: 10.1016/j.jappgeo.2014.04.022 Takes time to compute!!</td></tr>
+<tr><td style="width: 25%;"><a href="delineation.html">rmDelineations&lt;-</a></td>
+<td>Delineate structure on GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="robustSmooth.html">robustSmooth</a></td>
+<td>Robust smoothing</td></tr>
+<tr><td style="width: 25%;"><a href="rotatePhase.html">rotatePhase</a></td>
+<td>Phase rotation</td></tr>
+<tr><td style="width: 25%;"><a href="colSums.html">rowMeans-method</a></td>
+<td>Form Row and Column Sums and Means</td></tr>
+<tr><td style="width: 25%;"><a href="colSums.html">rowSums-method</a></td>
+<td>Form Row and Column Sums and Means</td></tr>
+</table>
+
+<h2><a name="S">-- S --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="setCoordref-methods.html">setCoordref</a></td>
+<td>Define a local reference coordinate</td></tr>
+<tr><td style="width: 25%;"><a href="setCoordref-methods.html">setCoordref-method</a></td>
+<td>Define a local reference coordinate</td></tr>
+<tr><td style="width: 25%;"><a href="setGridCoord-methods.html">setGridCoord</a></td>
+<td>Set grid coordinates the trace position.</td></tr>
+<tr><td style="width: 25%;"><a href="setGridCoord-methods.html">setGridCoord&lt;--method</a></td>
+<td>Set grid coordinates the trace position.</td></tr>
+<tr><td style="width: 25%;"><a href="setLayerVelocities.html">setLayerVelocities</a></td>
+<td>Plot the delineation on a 2D plot</td></tr>
+<tr><td style="width: 25%;"><a href="name.html">setName</a></td>
+<td>Name of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="time0.html">setTime0</a></td>
+<td>'time-zero' of every traces</td></tr>
+<tr><td style="width: 25%;"><a href="setVel.html">setVel</a></td>
+<td>Set velocities</td></tr>
+<tr><td style="width: 25%;"><a href="setVel.html">setVel-method</a></td>
+<td>Set velocities</td></tr>
+<tr><td style="width: 25%;"><a href="shiftEst.html">shiftEst</a></td>
+<td>Shift estimation between two GPR profiles.</td></tr>
+<tr><td style="width: 25%;"><a href="shiftmat.html">shiftmat</a></td>
+<td>shift a matrix by n and m shift a matrix by n and m</td></tr>
+<tr><td style="width: 25%;"><a href="show.html">show</a></td>
+<td>Print GPR</td></tr>
+<tr><td style="width: 25%;"><a href="show-GPRcube-method.html">show-method</a></td>
+<td>Show some information on the GPRcube object</td></tr>
+<tr><td style="width: 25%;"><a href="show.html">show-method</a></td>
+<td>Print GPR</td></tr>
+<tr><td style="width: 25%;"><a href="simWavelet.html">simWavelet</a></td>
+<td>Simulates a GPR wavelet</td></tr>
+<tr><td style="width: 25%;"><a href="spBuffer.html">spBuffer</a></td>
+<td>Buffer the GPR lines</td></tr>
+<tr><td style="width: 25%;"><a href="spBuffer.html">spBuffer-method</a></td>
+<td>Buffer the GPR lines</td></tr>
+<tr><td style="width: 25%;"><a href="spConvexHull.html">spConvexHull</a></td>
+<td>Convex hull of GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="spConvexHull.html">spConvexHull-method</a></td>
+<td>Convex hull of GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="spec.html">spec</a></td>
+<td>Return the amplitude spectrum of the GPR object.</td></tr>
+<tr><td style="width: 25%;"><a href="spec1D-GPR-method.html">spec1D-method</a></td>
+<td>Frequency spectrum the traces (1D)</td></tr>
+<tr><td style="width: 25%;"><a href="spec2D-GPR-method.html">spec2D-method</a></td>
+<td>Frequency spectrum the traces (1D)</td></tr>
+<tr><td style="width: 25%;"><a href="spExtractFromRaster.html">spExtractFromRaster</a></td>
+<td>Extract elevation from raster data</td></tr>
+<tr><td style="width: 25%;"><a href="spInterpToRaster.html">spInterpToRaster</a></td>
+<td>Interpolate trace elevation to raster</td></tr>
+<tr><td style="width: 25%;"><a href="spOBB.html">spOBB</a></td>
+<td>Oriented bounding box</td></tr>
+<tr><td style="width: 25%;"><a href="spOBB.html">spOBB-method</a></td>
+<td>Oriented bounding box</td></tr>
+<tr><td style="width: 25%;"><a href="STFT-GPR-method.html">STFT-method</a></td>
+<td>Short-time Fourier Transform (STFT)</td></tr>
+<tr><td style="width: 25%;"><a href="strTensor.html">strTensor</a></td>
+<td>Structure tensor field of GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="strucTensor.html">strucTensor</a></td>
+<td>structure tensor for matrices</td></tr>
+<tr><td style="width: 25%;"><a href="Summary-methods.html">Summary-GPR-method</a></td>
+<td>Basic summary functions</td></tr>
+<tr><td style="width: 25%;"><a href="Summary-methods.html">Summary-GPRcube-method</a></td>
+<td>Basic summary functions</td></tr>
+<tr><td style="width: 25%;"><a href="Summary-methods.html">Summary-GPRslice-method</a></td>
+<td>Basic summary functions</td></tr>
+<tr><td style="width: 25%;"><a href="Summary-methods.html">Summary-method</a></td>
+<td>Basic summary functions</td></tr>
+<tr><td style="width: 25%;"><a href="surveyIntersect.html">surveyIntersect</a></td>
+<td>Compute the survey intersections</td></tr>
+<tr><td style="width: 25%;"><a href="surveymode.html">surveymode</a></td>
+<td>Survey mode of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="surveymode.html">surveymode&lt;-</a></td>
+<td>Survey mode of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="svAngle.html">svAngle</a></td>
+<td>Angle of the GPR survey</td></tr>
+<tr><td style="width: 25%;"><a href="svDate.html">svDate</a></td>
+<td>Survey date</td></tr>
+<tr><td style="width: 25%;"><a href="svDate.html">svDate&lt;-</a></td>
+<td>Survey date</td></tr>
+</table>
+
+<h2><a name="T">-- T --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="time0.html">time0</a></td>
+<td>'time-zero' of every traces</td></tr>
+<tr><td style="width: 25%;"><a href="time0.html">time0&lt;-</a></td>
+<td>'time-zero' of every traces</td></tr>
+<tr><td style="width: 25%;"><a href="time0Cor.html">time0Cor</a></td>
+<td>Time zero correction</td></tr>
+<tr><td style="width: 25%;"><a href="timeCorOffset.html">timeCorOffset</a></td>
+<td>Constant-offset correction (time) of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="timeToDepth.html">timeToDepth</a></td>
+<td>time to depth conversion</td></tr>
+<tr><td style="width: 25%;"><a href="tpOBB2D.html">tpOBB2D</a></td>
+<td>Oriented bounding box (2D)</td></tr>
+<tr><td style="width: 25%;"><a href="tpShift.html">tpShift</a></td>
+<td>Shift trace positions of one GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="traceAverage.html">traceAverage</a></td>
+<td>Trace average (DEPRECATED, use 'traceStat' instead)</td></tr>
+<tr><td style="width: 25%;"><a href="traceScaling.html">traceScaling</a></td>
+<td>Trace scaling</td></tr>
+<tr><td style="width: 25%;"><a href="traceShift.html">traceShift</a></td>
+<td>Shift trace vertically</td></tr>
+<tr><td style="width: 25%;"><a href="traceStat.html">traceStat</a></td>
+<td>Trace statistics</td></tr>
+<tr><td style="width: 25%;"><a href="trAmplCor.html">trAmplCor</a></td>
+<td>Gain compensation</td></tr>
+<tr><td style="width: 25%;"><a href="trimStr.html">trimStr</a></td>
+<td>Trim string</td></tr>
+<tr><td style="width: 25%;"><a href="trPlot.html">trPlot</a></td>
+<td>Plot all the traces in one 1D plot</td></tr>
+<tr><td style="width: 25%;"><a href="trProject.html">trProject</a></td>
+<td>Trace projection</td></tr>
+<tr><td style="width: 25%;"><a href="trRmDuplicates.html">trRmDuplicates</a></td>
+<td>Remove traces with duplicated trace positions</td></tr>
+<tr><td style="width: 25%;"><a href="trTime.html">trTime</a></td>
+<td>Time of data collection for each trace</td></tr>
+<tr><td style="width: 25%;"><a href="trTime-GPR-method.html">trTime-method</a></td>
+<td>#' Velocity model of the GPR data #' #' @name vel #' @rdname vel #' @export setMethod("vel", "GPR", function(x) if(length(x@vel) == 1) return(x@vel[[1]]) else return(x@vel) )</td></tr>
+</table>
+
+<h2><a name="U">-- U --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="unscale.html">unscale</a></td>
+<td>Unscale</td></tr>
+<tr><td style="width: 25%;"><a href="unwrapPhase-GPR-method.html">unwrapPhase-method</a></td>
+<td>Unwrap signal phase</td></tr>
+<tr><td style="width: 25%;"><a href="upsample.html">upsample</a></td>
+<td>Up-sample the GPR data (1D and 2D sinc-interpolation)</td></tr>
+<tr><td style="width: 25%;"><a href="UTMToEPSG.html">UTMToEPSG</a></td>
+<td>EPGS code from UTM zone</td></tr>
+<tr><td style="width: 25%;"><a href="UTMToll.html">UTMToll</a></td>
+<td>UTM to latitude-longitude</td></tr>
+</table>
+
+<h2><a name="V">-- V --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="values.html">values</a></td>
+<td>Values of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="values.html">values&lt;-</a></td>
+<td>Values of the GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="vel.html">vel</a></td>
+<td>Set and get velocity</td></tr>
+<tr><td style="width: 25%;"><a href="vel.html">vel-method</a></td>
+<td>Set and get velocity</td></tr>
+<tr><td style="width: 25%;"><a href="vel.html">vel&lt;-</a></td>
+<td>Set and get velocity</td></tr>
+<tr><td style="width: 25%;"><a href="vel.html">vel&lt;--method</a></td>
+<td>Set and get velocity</td></tr>
+<tr><td style="width: 25%;"><a href="velDix.html">velDix</a></td>
+<td>Computes Dix velocities</td></tr>
+<tr><td style="width: 25%;"><a href="velInterp.html">velInterp</a></td>
+<td>Interpolate velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="velInterp.html">velInterp-method</a></td>
+<td>Interpolate velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="velPick.html">velPick</a></td>
+<td>Pick velocity interactively</td></tr>
+<tr><td style="width: 25%;"><a href="velPick.html">velPick-method</a></td>
+<td>Pick velocity interactively</td></tr>
+<tr><td style="width: 25%;"><a href="velSmooth.html">velSmooth</a></td>
+<td>Smooth velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="velSmooth.html">velSmooth-method</a></td>
+<td>Smooth velocity model</td></tr>
+<tr><td style="width: 25%;"><a href="velSpectrum.html">velSpectrum</a></td>
+<td>Velocity spectrum (CMP Analysis)</td></tr>
+<tr><td style="width: 25%;"><a href="velSpectrum.html">velSpectrum-method</a></td>
+<td>Velocity spectrum (CMP Analysis)</td></tr>
+<tr><td style="width: 25%;"><a href="verboseF.html">verboseF</a></td>
+<td>Suppressing output from cat(), warnings &amp; messages</td></tr>
+</table>
+
+<h2><a name="W">-- W --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="wapply.html">wapply</a></td>
+<td>wapply: A faster (but less functional) "rollapply" for vector setups April 23, 2013. By A.N. Spiess, senior scientist at the Department of Andrology at the University Hospital Hamburg-Eppendorf. This is what turned out (wapply for "window apply").</td></tr>
+<tr><td style="width: 25%;"><a href="wapplyMat.html">wapplyMat</a></td>
+<td>windowing with centered window</td></tr>
+<tr><td style="width: 25%;"><a href="wapplyMat2.html">wapplyMat2</a></td>
+<td>windowing with not centered window</td></tr>
+<tr><td style="width: 25%;"><a href="wapplyRow.html">wapplyRow</a></td>
+<td>Wapply on the row of a matrix (windowed)</td></tr>
+<tr><td style="width: 25%;"><a href="wapplyRowC.html">wapplyRowC</a></td>
+<td>Wapply on the row of a matrix (windowed + CENTERED)</td></tr>
+<tr><td style="width: 25%;"><a href="wavGPR.html">wavGPR</a></td>
+<td>Simulate GPR wavelet</td></tr>
+<tr><td style="width: 25%;"><a href="wavHat.html">wavHat</a></td>
+<td>Simulate Hat wave</td></tr>
+<tr><td style="width: 25%;"><a href="writeGPR.html">writeGPR</a></td>
+<td>Write GPR data</td></tr>
+<tr><td style="width: 25%;"><a href="writeSurvey.html">writeSurvey</a></td>
+<td>Write GPRsurvey object</td></tr>
+</table>
+
+<h2><a name="X">-- X --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="xpos.html">xpos</a></td>
+<td>Return x-positions</td></tr>
+</table>
+
+<h2><a name="Y">-- Y --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="ypos.html">ypos</a></td>
+<td>Return y-positions</td></tr>
+</table>
+
+<h2><a name="misc">-- misc --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="strucTensor.html">.strucTensor</a></td>
+<td>structure tensor for matrices</td></tr>
+<tr><td style="width: 25%;"><a href="GPR-subset.html">[&lt;-</a></td>
+<td>extract parts of GPR</td></tr>
+<tr><td style="width: 25%;"><a href="GPRsurvey-subsubset.html">[[</a></td>
+<td>extract a GPR object from a GPRsurvey object</td></tr>
+<tr><td style="width: 25%;"><a href="GPRsurvey-subsubset.html">[[&lt;--method</a></td>
+<td>extract a GPR object from a GPRsurvey object</td></tr>
+</table>
+</div></body></html>

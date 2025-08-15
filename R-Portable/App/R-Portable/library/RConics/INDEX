@@ -1,0 +1,24 @@
+RConics-package         RConics: Computations on conics
+addLine                 Plot a "homogeneous" line to a plot.
+adjoint                 Adjoint matrix
+arcLengthEllipse        Arc length of an ellipse
+cofactor                (i,j)-cofactor and (i,j)-minor of a matrix
+colinear                Test for colinearity
+conicMatrixToEllipse    Transformation of the matrix representation of
+                        an ellipse into the ellipse parameters
+conicThrough5Points     Compute the conic that passes through 5 points
+cubic                   Roots of the cubic equation.
+ellipse                 Return ellipse points
+ellipseToConicMatrix    Transformation of the ellipse parameters into
+                        the matrix representation
+intersectConicConic     Intersection between two conics
+intersectConicLine      Intersections between a conic and a line
+join                    The join and meet of two points and the
+                        parallel
+pEllipticInt            Partial elliptic integral
+polar                   Polar line of point with respect to a conic
+quadraticFormToMatrix   Transformation of the quadratic conic
+                        representation into the matrix representation.
+rotation                Affine planar transformations matrix
+skewSymmetricMatrix     (3 \times 3) skew symmetric matrix
+splitDegenerateConic    Split degenerate conic
